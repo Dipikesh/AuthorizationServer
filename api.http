@@ -1,0 +1,46 @@
+
+POST http://localhost:8000/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"dipikesh2001@gmail.com",
+    "password":"Dipikesh",
+    "confirmPassword":"Dipikesh",
+    "name":"Dipikesh"
+}
+
+###
+
+POST http://localhost:8000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"dipikesh2001@gmail.com",
+    "password":"Dipikesh@123"
+}
+###
+POST http://localhost:8000/verify-email HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"dipikesh2001@gmail.com",
+    "otp":"c709db"
+}
+
+###
+POST http://localhost:8000/forgetPassword HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"dipikesh2001@gmail.com"
+}
+
+###
+POST http://localhost:8000/reset-link/eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MjFiN2JhNDFkNmM1ZDE3Yjg0MmVjOGIiLCJpYXQiOjE2NDU5NzU2ODYxMjUsInR5cGUiOiJhdCIsImV4cCI6MTY0NTk3NjI5MDkyNX0.pFl94-DnDbLYBlUEG0jg15jDXWxi4_zWuui0X4Xz5VVdXNI9N9Dc4oWzQ2GXutj-gKwcb7SDatJfWEtKY7sW7YdiEe95CVYtS2D_xzYcbSqHA-oM2-JpNP7BQNK2TtFlXhhD6cuvUv50R7rcGEPg_noMqOpzO-eE1tsEx8kA9NGATkwT4SqCx2pj52Eiwm5jgapIrAwoJ65ScUDFwJYwoRJ-JgNMvd3w4yvULp4vZ0aPP1edR2v1lOU7YJhwHHD5RZffz0nVENgU8eIy-m8ZBOYIqCsyQeWeg-f4ndTx8PPFNfFKS-qVA9wQ0mK3ol8QnE5XaGnGYEcxeHgcSWvfKZWGXz1orT5szK9XK-nnT4t8LaDwYO3LQ5XyN177PPXF-vnWgshjMpbrguXIYBobiJhRK8YS54lYtyn3FlfwvKuGmBKhPeZPL_sTSogB7zyBfJ6svG8qfuEUPoAMF7toY4k0ptKdHu3uTBybrY4YSFNgYRWwl4h4FoNMI2Ovf1XojQpPtfBvVZ-0N174AKZV71x-YxO-L-TD7e2f_hRNgcxSke8px23hCvJqVkn98Vo2cf5yuwMU83k3XkRckhdG7vEA27jAshzsj4sRPeYccuG3LFkrCP4XzsBGKgFKvX9i4ZZaleYjzw6jVndpATzQiKy24AX_M2-2LtomOXje2iI
+Content-Type: application/json
+
+{
+    "password":"Dipikesh@123",
+    "confirmPassword":"Dipikesh@123"
+}
+
